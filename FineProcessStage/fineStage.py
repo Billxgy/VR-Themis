@@ -1,5 +1,6 @@
 import os
 import shutil
+import sys
 import time
 import Studio
 
@@ -16,7 +17,15 @@ def clear_file_content(file_path):
 if __name__ == "__main__":
     # ----------File paths----------
     current_directory = os.getcwd()
-    input_apps_folder = os.path.abspath("C:\\_Research\\Dataset\\VR_apks_1202")
+    
+    # Check if the user provided an argument
+    if len(sys.argv) < 2:
+        print("Usage: python FineProcessStage/fineStage.py APK_OR_DIRECTORY_PATH")
+        sys.exit(1)  # Exit if no argument is provided
+    
+    # Get the input apps folder from the first argument
+    input_apps_folder = os.path.abspath(sys.argv[1])
+    
     Clusters_path = os.path.join(current_directory, "CoarseProcessStage\\Clustering\\clusters.json")
     meshes_folder = os.path.join(current_directory, "Data\\meshes")
     Hashing_folder = os.path.join(current_directory, "FineProcessStage\\Mesh_Hash")
