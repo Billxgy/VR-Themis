@@ -13,13 +13,13 @@ Dotnet core 8.0
 * **Statistical feature extraction**
 
 ```
-$ python coarseStage.py
+$ python ./CoarseProcessStage/coarseStage.py
 ```
 
 * **Clustering**
 
 ```
-$ python DBSCAN.py
+$ python ./CoarseProcessStage/Clustering/DBSCAN.py
 ```
 
 ## Fine-grained process Stage
@@ -29,6 +29,6 @@ Place `AssetStudio.Fine`, [dnSpy](https://github.com/dnSpy/dnSpy), and [Il2cppDu
 command line
 
 ```
-$ python FineProcessStage/fineStage.py APK_DIRECTORY_PATH
+$ python ./FineProcessStage/fineStage.py APK_DIRECTORY_PATH
 ```
 
