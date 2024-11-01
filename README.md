@@ -2,7 +2,7 @@
 
 A Virtual Reality Application Clone Detection Tool
 
-*Download AssetStudio.Coarse and AssetStudio.Fine for VR-Themis from dependents or link(https://zenodo.org/records/14024433)*
+*Download AssetStudio.Coarse and AssetStudio.Fine for VR-Themis from dependents or [link](https://zenodo.org/records/14024433)*
 
 
 ## Requirements
