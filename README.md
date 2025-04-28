@@ -2,7 +2,7 @@
 
 A Virtual Reality Application Clone Detection Tool
 
-*Download AssetStudio.Coarse and AssetStudio.Fine for VR-Themis from dependents or [link](https://zenodo.org/records/14024433)*
+AssetStudio.Coarse (used in Coarse-grained stage) and AssetStudio.Fine (used in Fine-grained stage) can be downloaded from dependents or [link](https://zenodo.org/records/14024433)
 
 
 ## Requirements
