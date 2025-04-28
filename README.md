@@ -1,36 +1,81 @@
 # VR-Themis
 
-A Virtual Reality Application Clone Detection Tool
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download/dotnet/8.0)
 
-AssetStudio.Coarse (used in Coarse-grained stage) and AssetStudio.Fine (used in Fine-grained stage) can be downloaded from dependents or [link](https://zenodo.org/records/14024433)
+A powerful tool for detecting VR application clones using two-stage analysis.
 
+## Features
+
+- Two-stage analysis (coarse-grained and fine-grained)
+- Efficient processing for large-scale application dataset
+- Accurate clone detection
+- Design for VR-Specific features
 
 ## Requirements
 
-Python 3.10
-Dotnet core 8.0
+- Python 3.10
+- .NET Core 8.0
+- Windows OS
 
-## Coarse-grained process stage
 
-* **Statistical feature extraction**
+## Installation
 
-```
-$ python ./CoarseProcessStage/coarseStage.py
-```
-
-* **Clustering**
-
-```
-$ python ./CoarseProcessStage/Clustering/DBSCAN.py
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/VR-Themis.git
+cd VR-Themis
 ```
 
-## Fine-grained process Stage
-
-Place `AssetStudio.Fine`, [dnSpy](https://github.com/dnSpy/dnSpy), and [Il2cppDumper](https://github.com/Perfare/Il2CppDumper) in their respective directories.
-
-command line
-
-```
-$ python ./FineProcessStage/fineStage.py APK_DIRECTORY_PATH
+2. Install Python dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
+3. Install .NET Core 8.0 from [official website](https://dotnet.microsoft.com/download/dotnet/8.0)
+
+4. Download and place required tools:
+- AssetStudio.Coarse → `CoarseProcessStage/AssetStudio.Coarse/`
+- AssetStudio.Fine → `FineProcessStage/AssetStudio.Fine/`
+- dnSpy → `FineProcessStage/dnSpy/`
+- Il2CppDumper → `FineProcessStage/IL2CPPDumper/`
+
+## Usage
+
+### Coarse-grained Analysis
+
+1. Extract features:
+```bash
+python ./CoarseProcessStage/coarseStage.py
+```
+
+2. Run clustering:
+```bash
+python ./CoarseProcessStage/Clustering/DBSCAN.py
+```
+
+### Fine-grained Analysis
+
+Run analysis:
+```bash
+python ./FineProcessStage/fineStage.py APK_DIRECTORY_PATH
+```
+
+## Project Structure
+
+```
+VR-Themis/
+├── CoarseProcessStage/        # Coarse analysis
+│   ├── AssetStudio.Coarse/    # Feature extraction tool
+│   ├── Clustering/            # Clustering module
+│   ├── coarseStage.py         # Main program
+│   └── Studio.py              
+├── FineProcessStage/          # Fine analysis
+│   ├── AssetStudio.Fine/      # Asset extraction tool
+│   ├── dnSpy/                 # Decompiler for Mono-based
+│   ├── IL2CPPDumper/          # Decompiler for IL2CPP-based
+│   ├── fineStage.py           # Main program
+│   └── Studio.py              
+└── Data/                      # Data storage
+```
