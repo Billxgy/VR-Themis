@@ -36,10 +36,10 @@ pip install -r requirements.txt
 3. Install .NET Core 8.0 from [official website](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 4. Download and place required tools:
-- AssetStudio.Coarse → `CoarseProcessStage/AssetStudio.Coarse/`
-- AssetStudio.Fine → `FineProcessStage/AssetStudio.Fine/`
-- dnSpy → `FineProcessStage/dnSpy/`
-- Il2CppDumper → `FineProcessStage/IL2CPPDumper/`
+- [AssetStudio.Coarse](https://github.com/Billxgy/VR-Themis/releases/tag/dependents) → `CoarseProcessStage/AssetStudio.Coarse/`
+- [AssetStudio.Fine](https://github.com/Billxgy/VR-Themis/releases/tag/dependents) → `FineProcessStage/AssetStudio.Fine/`
+- [dnSpy](https://github.com/dnSpy/dnSpy) → `FineProcessStage/dnSpy/`
+- [Il2CppDumper](https://github.com/Perfare/Il2CppDumper) → `FineProcessStage/IL2CPPDumper/`
 
 ## Usage
 
