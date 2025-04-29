@@ -76,6 +76,7 @@ VR-Themis/
 │   ├── IL2CPPDumper/          # Decompiler for IL2CPP-based
 │   ├── fineStage.py           # Main program
 │   └── Studio.py
-├── app list.xlsx/             # Collected VR apps list        
+├── app list.xlsx              # Collected VR apps list
+├── results.txt                # Storing clone detection results     
 └── Data/                      # Data storage
 ```
