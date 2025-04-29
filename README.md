@@ -1,17 +1,16 @@
 # VR-Themis
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![.NET](https://img.shields.io/badge/.NET-8.0-blue.svg)](https://dotnet.microsoft.com/download/dotnet/8.0)
 
-A powerful tool for detecting VR application clones using two-stage analysis.
+A powerful tool for detecting Virtual Reality (VR) application clones using a two-stage design.
 
 ## Features
 
-- Two-stage analysis (coarse-grained and fine-grained)
-- Efficient processing for large-scale application dataset
-- Accurate clone detection
-- Design for VR-Specific features
+- Two-stage analysis (coarse-grained processing stage and fine-grained processing stage)
+- Efficient processing for the large-scale application dataset
+- Accurate clone app detection for Unity-developed VR applications
+- Design for VR-specific features (e.g., scene hierarchy, 3D objects, script behaviours)
 
 ## Requirements
 
@@ -35,7 +34,7 @@ pip install -r requirements.txt
 
 3. Install .NET Core 8.0 from [official website](https://dotnet.microsoft.com/download/dotnet/8.0)
 
-4. Download and place required tools:
+4. Download and place the required tools:
 - [AssetStudio.Coarse](https://github.com/Billxgy/VR-Themis/releases/tag/dependents) → `CoarseProcessStage/AssetStudio.Coarse/`
 - [AssetStudio.Fine](https://github.com/Billxgy/VR-Themis/releases/tag/dependents) → `FineProcessStage/AssetStudio.Fine/`
 - [dnSpy](https://github.com/dnSpy/dnSpy) → `FineProcessStage/dnSpy/`
@@ -57,7 +56,7 @@ python ./CoarseProcessStage/Clustering/DBSCAN.py
 
 ### Fine-grained Analysis
 
-Run analysis:
+Run pairwise similarity calculations:
 ```bash
 python ./FineProcessStage/fineStage.py APK_DIRECTORY_PATH
 ```
@@ -76,6 +75,7 @@ VR-Themis/
 │   ├── dnSpy/                 # Decompiler for Mono-based
 │   ├── IL2CPPDumper/          # Decompiler for IL2CPP-based
 │   ├── fineStage.py           # Main program
-│   └── Studio.py              
+│   └── Studio.py
+├── app list.xlsx/             # Collected VR apps list        
 └── Data/                      # Data storage
 ```
