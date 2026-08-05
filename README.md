@@ -23,7 +23,7 @@ A powerful tool for detecting Virtual Reality (VR) application clones using a tw
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/VR-Themis.git
+git clone https://github.com/gengyang-xu/VR-Themis.git
 cd VR-Themis
 ```
 
